@@ -7,7 +7,7 @@ city string
 ) row format delimited fields terminated by ',';
 
 # when the file is present in the local fs
-load data  local inpath '/Downloads/user_data.csv' overwrite into table users;
+load data  local inpath '/Downloads/user_data.csv' overwrite into table user_data;
 
 # when the file is present in hdfs
-load data inpath '/tmp/user_data.csv' overwrite into table rating_empty_column
+load data inpath '/tmp/user_data.csv' overwrite into table user_data;
